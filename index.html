@@ -402,13 +402,21 @@
     opacity: 0.5;
     filter: blur(16px);
   }
-  .about-img-frame img {
-    width: 100%;
-    border-radius: 16px;
-    display: block;
-    border: 1px solid var(--border);
-    filter: grayscale(20%) contrast(1.05);
-  }
+ .about-img-frame img{
+    width:100%;
+    aspect-ratio:3/4;
+    object-fit:cover;
+    border-radius:16px;
+    display:block;
+    border:2px solid rgba(139,92,246,.3);
+    transition:.4s ease;
+    box-shadow:0 0 35px rgba(139,92,246,.35);
+}
+
+.about-img-frame img:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 60px rgba(139,92,246,.6);
+}
   .about-img-frame .img-placeholder {
     width: 100%;
     aspect-ratio: 3/4;
@@ -930,7 +938,7 @@
     Kartik<br>
     <span class="gradient-text">Karenaver</span>
   </h1>
-  <div class="hero-title">// Data Scientist · ML Engineer · AI Explorer</div>
+  <div class="hero-title">// Data Scientist · ML Engineer · Data Analytics</div>
   <p class="hero-tagline">
     Building data-driven solutions that transform raw numbers into real-world impact. 
     Turning machine learning models into products that actually work.
@@ -972,7 +980,7 @@
   <div class="about-grid">
     <div class="about-img-wrap reveal">
       <div class="about-img-frame">
-        <div class="img-placeholder">KK</div>
+         <img src="profile.jpg" alt="Kartik Karenavar">
       </div>
     </div>
     <div class="about-text reveal">
@@ -1018,12 +1026,6 @@
         <span class="skill-tag">Supervised Learning</span>
         <span class="skill-tag">Unsupervised Learning</span>
         <span class="skill-tag">Feature Engineering</span>
-        <span class="skill-tag">Cross-Validation</span>
-        <span class="skill-tag">Hyperparameter Tuning</span>
-        <span class="skill-tag">Scikit-learn</span>
-        <span class="skill-tag">TensorFlow</span>
-        <span class="skill-tag">Keras</span>
-        <span class="skill-tag">OpenCV</span>
       </div>
     </div>
 
@@ -1031,9 +1033,6 @@
       <div class="skill-card-title"><span class="icon">🧠</span>AI & GenAI</div>
       <div class="skill-tags">
         <span class="skill-tag">LLMs</span>
-        <span class="skill-tag">RAG</span>
-        <span class="skill-tag">LangChain</span>
-        <span class="skill-tag">Hugging Face</span>
         <span class="skill-tag">Agentic AI</span>
         <span class="skill-tag">NLP</span>
       </div>
@@ -1048,20 +1047,6 @@
         <span class="skill-tag">Seaborn</span>
         <span class="skill-tag">Power BI</span>
         <span class="skill-tag">Excel</span>
-        <span class="skill-tag">EDA</span>
-        <span class="skill-tag">ETL Pipelines</span>
-      </div>
-    </div>
-
-    <div class="skill-card reveal">
-      <div class="skill-card-title"><span class="icon">⚙️</span>Backend & APIs</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Flask</span>
-        <span class="skill-tag">FastAPI</span>
-        <span class="skill-tag">Django REST</span>
-        <span class="skill-tag">RESTful APIs</span>
-        <span class="skill-tag">Model Deployment</span>
-        <span class="skill-tag">Postman</span>
       </div>
     </div>
 
@@ -1069,11 +1054,6 @@
       <div class="skill-card-title"><span class="icon">🗄️</span>Databases</div>
       <div class="skill-tags">
         <span class="skill-tag">MySQL</span>
-        <span class="skill-tag">PostgreSQL</span>
-        <span class="skill-tag">MongoDB</span>
-        <span class="skill-tag">ChromaDB</span>
-        <span class="skill-tag">Pinecone</span>
-        <span class="skill-tag">FAISS</span>
       </div>
     </div>
 
@@ -1082,8 +1062,6 @@
       <div class="skill-tags">
         <span class="skill-tag">Probability</span>
         <span class="skill-tag">Descriptive Statistics</span>
-        <span class="skill-tag">Hypothesis Testing</span>
-        <span class="skill-tag">Regression Analysis</span>
       </div>
     </div>
 
@@ -1273,9 +1251,9 @@
       I'm actively looking for internships and entry-level data science roles. Whether you have a project, an opportunity, or just want to talk data — my inbox is always open.
     </p>
     <div class="contact-links reveal">
-      <a href="mailto:saheranjumm@gmail.com" class="contact-link email">
+      <a href="mailto:karenavarkartik@gmail.com" class="contact-link email">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        kartikkarenavar2004@gmail.com
+        karenavarkartik@gmail.com
       </a>
       <a href="https://www.linkedin.com/in/kartik-karenaver-802146381/" target="_blank" class="contact-link secondary">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
